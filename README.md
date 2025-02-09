@@ -22,8 +22,9 @@ aws emr create-cluster \
 ```
 
 ## 1. Subida de archivo desde S3
+Por privacidad, sólo es modificar las varibles por el nombre del bucket, el archivo de origen y la ruta de destino deseadas.
 ```bash
-aws s3 cp s3://proyecto-final-spark-hadoop-data-engineer/access.log.bz2 /root/input/access.log.bz2
+aws s3 cp s3://mi-bucket-de-datos/nuevo-archivo.csv /root/destino/nuevo-archivo.csv
 ```
 
 ## 2. Análisis de Logs con Hadoop
